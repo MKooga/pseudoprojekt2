@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.9/css/jquery.dataTables.css">
+
+    <!-- jQuery -->
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <!-- DataTables -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+<table id="table_id" class="display">
+    <thead>
+    <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+        <th>Column 4</th>
+        <th>Column 5</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Row 1 Data 1</td>
+        <td>Row 1 Data 2</td>
+        <td>Row 1 Data 3</td>
+        <td>Row 1 Data 4</td>
+        <td>Row 1 Data 5</td>
+    </tr>
+    <tr>
+        <td>Row 2 Data 1</td>
+        <td>Row 2 Data 2</td>
+        <td>Row 2 Data 3</td>
+        <td>Row 2 Data 4</td>
+        <td>Row 2 Data 5</td>
+    </tr>
+    <tr>
+        <td>Row 3 Data 1</td>
+        <td>Row 3 Data 2</td>
+        <td>Row 3 Data 3</td>
+        <td>Row 3 Data 4</td>
+        <td>Row 3 Data 5</td>
+    </tr>
+    <tr>
+        <td>Row 4 Data 1</td>
+        <td>Row 4 Data 2</td>
+        <td>Row 4 Data 3</td>
+        <td>Row 4 Data 4</td>
+        <td>Row 4 Data 5</td>
+    </tr>
+    <tr>
+        <td>Row 5 Data 1</td>
+        <td>Row 5 Data 2</td>
+        <td>Row 5 Data 3</td>
+        <td>Row 5 Data 4</td>
+        <td>Row 5 Data 5</td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+    $(document).ready(function() {
+        $('#table_id').DataTable();
+
+    } );
+
+    $('#table_id').dataTable( {
+        "paging": false,
+        "searching": false
+    } );
+</script>
+
+
+</body>
+</html>
